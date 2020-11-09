@@ -6,7 +6,7 @@ const ArticleForm = ({ history }) => {
 const initialState = {title:'',text:''};
 const [values,setValues]= useState(initialState);
 const handleSubmit=e=>{
-    e.prventDegault()
+    e.preventDefault()
     fetch('/articles',{
         method: 'Post',
         headers:{'Content-Type':'application/json'},
